@@ -31,6 +31,11 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_svg: ^2.0.7
+  pdf: ^3.10.4
+  file_picker: ^5.5.0
+  path_provider: ^2.1.1
+  syncfusion_flutter_pdf: ^23.1.38
+  syncfusion_flutter_pdfviewer: ^23.1.38
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -74,6 +79,13 @@ flutter:
      - lib/asset/images/Group 44.svg
      - lib/asset/images/image 21.svg
      - lib/asset/images/Group 80.svg
+     - lib/asset/images/3.svg
+     - lib/asset/images/Windows 11.svg
+     - lib/asset/images/ClickUp.svg
+     - lib/asset/images/Frame 1.svg
+     - lib/asset/images/electron-original.svg
+     - lib/asset/images/c-original.svg
+     - lib/asset/images/Mathematics -1 (BCA-102).pdf
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

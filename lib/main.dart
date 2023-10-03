@@ -1,8 +1,9 @@
 // import 'dart:async';
-import 'package:flutter/cupertino.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:pdf/pdf.dart';
+import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -174,24 +175,27 @@ class Firstscreen extends StatelessWidget {
           body: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 50, right: 120),
+                padding: const EdgeInsets.only(top: 50, right: 110),
                 child: Text(
                   "Select course",
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w300),
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
                 ),
               ),
               Column(children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 5, right: 170),
+                  padding: const EdgeInsets.only(top: 5, right: 160),
                   child: Text(
                     "Keep Growing",
-                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.w300),
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w200,
+                        color: Colors.black),
                   ),
                 ),
                 Stack(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(top: 55, left: 10),
+                      padding: const EdgeInsets.only(top: 55, left: 40),
                       child: TextButton(
                         child: Container(
                           height: 132,
@@ -217,13 +221,16 @@ class Firstscreen extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {
-                          print("hello");
+                          Navigator.push(
+                              context,
+                              (MaterialPageRoute(
+                                  builder: (context) => subject())));
                         },
                       ),
                     ),
                     Column(children: [
                       Padding(
-                        padding: const EdgeInsets.only(top: 75, left: 30),
+                        padding: const EdgeInsets.only(top: 75, left: 55),
                         child: Container(
                             height: 112,
                             width: 110,
@@ -239,7 +246,7 @@ class Firstscreen extends StatelessWidget {
                 Stack(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(top: 10, left: 20),
+                      padding: const EdgeInsets.only(top: 10, left: 40),
                       child: Container(
                         height: 132,
                         width: 280,
@@ -266,7 +273,7 @@ class Firstscreen extends StatelessWidget {
                     ),
                     Column(children: [
                       Padding(
-                        padding: const EdgeInsets.only(top: 30, left: 50),
+                        padding: const EdgeInsets.only(top: 20, left: 50),
                         child: Container(
                             height: 112,
                             width: 110,
@@ -365,27 +372,12 @@ class Firstscreen extends StatelessWidget {
                     ])
                   ],
                 ),
-                Stack(children: [
-                  Padding(
-                      padding: const EdgeInsets.only(top: 15, left: 0),
-                      child: Container(
-                        height: 64,
-                        width: 400,
-                        color: Colors.white,
-                        child: SvgPicture.asset(
-                          "lib/asset/images/Group 80.svg",
-                        ),
-                      ))
-                ])
               ]),
             ],
           ),
         ));
   }
 }
-    
-  
-
 
 // class splsescreen extends StatefulWidget {
 //   const splsescreen({super.key});
@@ -426,3 +418,216 @@ class Firstscreen extends StatelessWidget {
 //     );
 //   }
 // }
+
+class subject extends StatelessWidget {
+  const subject({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        backgroundColor: Colors.white,
+        appBar: AppBar(
+          backgroundColor: Color.fromARGB(132, 83, 63, 236),
+          toolbarHeight: 110,
+          title: Text(
+            "Select subject",
+            style: TextStyle(fontSize: 22),
+          ),
+        ),
+        body: Stack(
+          children: [
+            Column(
+              children: [
+                Stack(
+                  children: [
+                    Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top: 50, left: 80),
+                          child: Padding(
+                            padding: const EdgeInsets.only(right: 80),
+                            child: Text("Programming in c++",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w500,
+                                )),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 40, left: 5),
+                      child: SvgPicture.asset(
+                        "lib/asset/images/3.svg",
+                        width: 0,
+                        height: 53,
+                      ),
+                    )
+                  ],
+                ),
+                Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 45, left: 80),
+                      child: Container(
+                        child: Text("Programming in C",
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w500,
+                            )),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 270, top: 30),
+                      child: SvgPicture.asset(
+                        "lib/asset/images/c-original.svg",
+                        width: 50,
+                        height: 53,
+                      ),
+                    )
+                  ],
+                ),
+                Stack(
+                  children: [
+                    TextButton(
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 40, left: 100),
+                        child: Container(
+                          child: Text("mathematics of computer science",
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.black,
+                              )),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.push(context,
+                            (MaterialPageRoute(builder: (context) => cpp())));
+                      },
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 35, top: 40),
+                      child: SvgPicture.asset(
+                        "lib/asset/images/Frame 1.svg",
+                        width: 50,
+                        height: 53,
+                      ),
+                    )
+                  ],
+                ),
+                Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 45, left: 85),
+                      child: Container(
+                        child: Text("Data Base menegment system",
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w500,
+                            )),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 14, top: 35),
+                      child: SvgPicture.asset(
+                        "lib/asset/images/3.svg",
+                        width: 50,
+                        height: 53,
+                      ),
+                    )
+                  ],
+                ),
+                Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 45, left: 70),
+                      child: Container(
+                        child: Text("Computer fundamentel",
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w500,
+                            )),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 260, top: 35),
+                      child: SvgPicture.asset(
+                        "lib/asset/images/Windows 11.svg",
+                        width: 50,
+                        height: 53,
+                      ),
+                    )
+                  ],
+                ),
+                Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 45, left: 75),
+                      child: Container(
+                        child: Text("Programming fundamentel",
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w500,
+                            )),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 260, top: 35),
+                      child: SvgPicture.asset(
+                        "lib/asset/images/ClickUp.svg",
+                        width: 50,
+                        height: 53,
+                      ),
+                    )
+                  ],
+                ),
+                Stack(
+                  children: [
+                    const Padding(
+                      padding: EdgeInsets.only(top: 45, left: 75),
+                      child: Text("Computer Network",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w500,
+                          )),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 260, top: 30),
+                      child: SvgPicture.asset(
+                        "lib/asset/images/electron-original.svg",
+                        width: 50,
+                        height: 53,
+                      ),
+                    )
+                  ],
+                ),
+              ],
+            )
+          ],
+        ));
+  }
+}
+
+class cpp extends StatefulWidget {
+  const cpp({super.key});
+
+  @override
+  State<cpp> createState() => _cppState();
+}
+
+class _cppState extends State<cpp> {
+  String url =
+      "https://docs.google.com/document/d/1MJ3_1TCtU0V9GqSwc4pYt1Iw_bOZUV1DKYY8ho53cws/edit?usp=sharing";
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
+        child:
+            SfPdfViewer.asset("lib/asset/images/Mathematics -1 (BCA-102).pdf"),
+      ),
+    );
+  }
+}
