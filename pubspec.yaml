@@ -86,6 +86,15 @@ flutter:
      - lib/asset/images/electron-original.svg
      - lib/asset/images/c-original.svg
      - lib/asset/images/Mathematics -1 (BCA-102).pdf
+     - lib/asset/images/CPlusPlusNotesForProfessionals.pdf
+     - lib/asset/images/mysql-original-wordmark.svg
+     - lib/asset/images/c++-hindi.pdf
+     - lib/asset/images/1592408067.pdf
+     - lib/asset/images/4 Book.svg
+     - lib/asset/images/Group 8.svg
+     - lib/asset/images/Fundamentals-of-Computer-and-IT-UGCA-1902-1.pdf
+     - lib/asset/images/COMPUTER NETWORKS NOTES.pdf
+     - lib/asset/images/BCA-1st-Programming-IN-Caaa.pdf
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

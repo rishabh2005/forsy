@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:pdf/pdf.dart';
+// import 'package:pdf/pdf.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 void main() {
@@ -443,14 +443,22 @@ class subject extends StatelessWidget {
                     Column(
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(top: 50, left: 80),
-                          child: Padding(
-                            padding: const EdgeInsets.only(right: 80),
-                            child: Text("Programming in c++",
-                                style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w500,
-                                )),
+                          padding: const EdgeInsets.only(top: 40, left: 80),
+                          child: TextButton(
+                            child: Padding(
+                              padding: const EdgeInsets.only(right: 68),
+                              child: Text("Programming in c++",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.black)),
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  (MaterialPageRoute(
+                                      builder: (context) => math())));
+                            },
                           ),
                         ),
                       ],
@@ -468,19 +476,28 @@ class subject extends StatelessWidget {
                 Stack(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(top: 45, left: 80),
+                      padding: const EdgeInsets.only(top: 35, left: 75),
                       child: Container(
-                        child: Text("Programming in C",
-                            style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.w500,
-                            )),
+                        child: TextButton(
+                          child: Text("Programming in C++ (hindi)",
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.black,
+                              )),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                (MaterialPageRoute(
+                                    builder: (context) => chindi())));
+                          },
+                        ),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(right: 270, top: 30),
+                      padding: const EdgeInsets.only(right: 240, top: 30),
                       child: SvgPicture.asset(
-                        "lib/asset/images/c-original.svg",
+                        "lib/asset/images/3.svg",
                         width: 50,
                         height: 53,
                       ),
@@ -491,7 +508,7 @@ class subject extends StatelessWidget {
                   children: [
                     TextButton(
                       child: Padding(
-                        padding: const EdgeInsets.only(top: 40, left: 100),
+                        padding: const EdgeInsets.only(top: 40, left: 108),
                         child: Container(
                           child: Text("mathematics of computer science",
                               style: TextStyle(
@@ -509,7 +526,7 @@ class subject extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 35, top: 40),
                       child: SvgPicture.asset(
-                        "lib/asset/images/Frame 1.svg",
+                        "lib/asset/images/Group 8.svg",
                         width: 50,
                         height: 53,
                       ),
@@ -519,19 +536,28 @@ class subject extends StatelessWidget {
                 Stack(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(top: 45, left: 85),
+                      padding: const EdgeInsets.only(top: 45, left: 100),
                       child: Container(
-                        child: Text("Data Base menegment system",
-                            style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.w500,
-                            )),
+                        child: TextButton(
+                          child: Text("Data Base menegment system",
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.black,
+                              )),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                (MaterialPageRoute(
+                                    builder: (context) => dbms())));
+                          },
+                        ),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 14, top: 35),
+                      padding: const EdgeInsets.only(left: 30, top: 35),
                       child: SvgPicture.asset(
-                        "lib/asset/images/3.svg",
+                        "lib/asset/images/mysql-original-wordmark.svg",
                         width: 50,
                         height: 53,
                       ),
@@ -541,17 +567,26 @@ class subject extends StatelessWidget {
                 Stack(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(top: 45, left: 70),
+                      padding: const EdgeInsets.only(top: 40, left: 75),
                       child: Container(
-                        child: Text("Computer fundamentel",
-                            style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.w500,
-                            )),
+                        child: TextButton(
+                          child: Text("Computer fundamentel",
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.black,
+                              )),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                (MaterialPageRoute(
+                                    builder: (context) => cf())));
+                          },
+                        ),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(right: 260, top: 35),
+                      padding: const EdgeInsets.only(right: 270, top: 35),
                       child: SvgPicture.asset(
                         "lib/asset/images/Windows 11.svg",
                         width: 50,
@@ -563,17 +598,26 @@ class subject extends StatelessWidget {
                 Stack(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(top: 45, left: 75),
+                      padding: const EdgeInsets.only(top: 35, left: 75),
                       child: Container(
-                        child: Text("Programming fundamentel",
-                            style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.w500,
-                            )),
+                        child: TextButton(
+                          child: Text("Programming fundamentel",
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.black,
+                              )),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                (MaterialPageRoute(
+                                    builder: (context) => pf())));
+                          },
+                        ),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(right: 260, top: 35),
+                      padding: const EdgeInsets.only(right: 240, top: 35),
                       child: SvgPicture.asset(
                         "lib/asset/images/ClickUp.svg",
                         width: 50,
@@ -584,13 +628,20 @@ class subject extends StatelessWidget {
                 ),
                 Stack(
                   children: [
-                    const Padding(
-                      padding: EdgeInsets.only(top: 45, left: 75),
-                      child: Text("Computer Network",
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w500,
-                          )),
+                    TextButton(
+                      child: const Padding(
+                        padding: EdgeInsets.only(top: 35, left: 75),
+                        child: Text("Computer Network",
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.black,
+                            )),
+                      ),
+                      onPressed: () {
+                        Navigator.push(context,
+                            (MaterialPageRoute(builder: (context) => cn())));
+                      },
                     ),
                     Padding(
                       padding: const EdgeInsets.only(right: 260, top: 30),
@@ -627,6 +678,124 @@ class _cppState extends State<cpp> {
       body: Center(
         child:
             SfPdfViewer.asset("lib/asset/images/Mathematics -1 (BCA-102).pdf"),
+      ),
+    );
+  }
+}
+
+class math extends StatefulWidget {
+  const math({super.key});
+
+  @override
+  State<math> createState() => _mathState();
+}
+
+class _mathState extends State<math> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
+        child: SfPdfViewer.asset(
+            "lib/asset/images/CPlusPlusNotesForProfessionals.pdf"),
+      ),
+    );
+  }
+}
+
+class chindi extends StatefulWidget {
+  const chindi({super.key});
+
+  @override
+  State<chindi> createState() => _chindiState();
+}
+
+class _chindiState extends State<chindi> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
+        child: SfPdfViewer.asset("lib/asset/images/c++-hindi.pdf"),
+      ),
+    );
+  }
+}
+
+class dbms extends StatefulWidget {
+  const dbms({super.key});
+
+  @override
+  State<dbms> createState() => _dbmsState();
+}
+
+class _dbmsState extends State<dbms> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
+        child: SfPdfViewer.asset("lib/asset/images/1592408067.pdf"),
+      ),
+    );
+  }
+}
+
+class cf extends StatefulWidget {
+  const cf({super.key});
+
+  @override
+  State<cf> createState() => _cfState();
+}
+
+class _cfState extends State<cf> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
+        child: SfPdfViewer.asset(
+            "lib/asset/images/Fundamentals-of-Computer-and-IT-UGCA-1902-1.pdf"),
+      ),
+    );
+  }
+}
+
+class pf extends StatefulWidget {
+  const pf({super.key});
+
+  @override
+  State<pf> createState() => _pfState();
+}
+
+class _pfState extends State<pf> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
+        child: SfPdfViewer.asset(
+            "lib/asset/images/BCA-1st-Programming-IN-Caaa.pdf"),
+      ),
+    );
+  }
+}
+
+class cn extends StatefulWidget {
+  const cn({super.key});
+
+  @override
+  State<cn> createState() => _cnState();
+}
+
+class _cnState extends State<cn> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
+        child:
+            SfPdfViewer.asset("lib/asset/images/COMPUTER NETWORKS NOTES.pdf"),
       ),
     );
   }
