@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 // import 'package:pdf/pdf.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -224,7 +225,7 @@ class Firstscreen extends StatelessWidget {
                           Navigator.push(
                               context,
                               (MaterialPageRoute(
-                                  builder: (context) => subject())));
+                                  builder: (context) => year())));
                         },
                       ),
                     ),
@@ -601,7 +602,7 @@ class subject extends StatelessWidget {
                       padding: const EdgeInsets.only(top: 35, left: 75),
                       child: Container(
                         child: TextButton(
-                          child: Text("Programming fundamentel",
+                          child: const Text("Programming fundamentel",
                               style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.w500,
@@ -798,5 +799,551 @@ class _cnState extends State<cn> {
             SfPdfViewer.asset("lib/asset/images/COMPUTER NETWORKS NOTES.pdf"),
       ),
     );
+  }
+}
+
+class year extends StatelessWidget {
+  const year({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final Uri _url = Uri.parse('https://bard.google.com/chat');
+    return Scaffold(
+        backgroundColor: Color.fromARGB(255, 255, 255, 255),
+        appBar: AppBar(),
+
+        // drawer: Drawer(),
+        body: Column(children: [
+          Container(
+            height: 400,
+            width: 400,
+            child: Padding(
+                padding: const EdgeInsets.only(
+                  top: 0,
+                ),
+                child: SvgPicture.asset(
+                  "lib/Business Plan.svg",
+                  height: 400,
+                  width: 400,
+                )),
+          ),
+          Column(children: [
+            // SingleChildScrollView(
+            //   scrollDirection: Axis.horizontal,
+            //   child: Row(
+            //     children: [
+            //       TextButton(
+            //         child: Stack(
+            //           children: [
+            //             Padding(
+            //                 padding:
+            //                     const EdgeInsets.only(bottom: 90, left: 20),
+            //                 child: Container(
+            //                     width: 120,
+            //                     height: 100,
+            //                     decoration: BoxDecoration(
+            //                         borderRadius: BorderRadius.circular(15),
+            //                         color:
+            //                             Color.fromARGB(255, 212, 192, 233)))),
+            //             Row(
+            //               children: [
+            //                 Padding(
+            //                   padding:
+            //                       const EdgeInsets.only(top: 10, left: 30),
+            //                   child: SvgPicture.asset(
+            //                     "lib/asset/images/Group 2134.svg",
+            //                     height: 70,
+            //                     width: 70,
+            //                   ),
+            //                 )
+            //               ],
+            //             )
+            //           ],
+            //         ),
+            //         onPressed: () {
+            //           Navigator.push(
+            //               context,
+            //               (MaterialPageRoute(
+            //                   builder: (context) => subject())));
+            //         },
+            //       ),
+            //       TextButton(
+            //         child: Stack(
+            //           children: [
+            //             Padding(
+            //                 padding:
+            //                     const EdgeInsets.only(bottom: 90, left: 10),
+            //                 child: Container(
+            //                     width: 120,
+            //                     height: 100,
+            //                     decoration: BoxDecoration(
+            //                         borderRadius: BorderRadius.circular(15),
+            //                         color:
+            //                             Color.fromARGB(255, 126, 164, 229)))),
+            //             Row(
+            //               children: [
+            //                 Padding(
+            //                   padding:
+            //                       const EdgeInsets.only(top: 10, left: 30),
+            //                   child: SvgPicture.asset(
+            //                     "lib/asset/images/Group 2134.svg",
+            //                     height: 70,
+            //                     width: 70,
+            //                   ),
+            //                 )
+            //               ],
+            //             )
+            //           ],
+            //         ),
+            //         onPressed: () {},
+            //       ),
+            //       TextButton(
+            //         child: Stack(
+            //           children: [
+            //             Padding(
+            //                 padding:
+            //                     const EdgeInsets.only(bottom: 90, left: 10),
+            //                 child: Container(
+            //                     width: 120,
+            //                     height: 100,
+            //                     decoration: BoxDecoration(
+            //                         borderRadius: BorderRadius.circular(15),
+            //                         color:
+            //                             Color.fromARGB(255, 126, 164, 229)))),
+            //             Row(
+            //               children: [
+            //                 Padding(
+            //                   padding:
+            //                       const EdgeInsets.only(top: 10, left: 30),
+            //                   child: SvgPicture.asset(
+            //                     "lib/asset/images/Group 2134.svg",
+            //                     height: 70,
+            //                     width: 70,
+            //                   ),
+            //                 )
+            //               ],
+            //             )
+            //           ],
+            //         ),
+            //         onPressed: () {},
+            //       ),
+            //     ],
+            //   ),
+            // ),
+            Row(
+              children: [
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 10, right: 0),
+                      child: TextButton(
+                        child: Container(
+                          width: 114,
+                          height: 56,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(12),
+                              color: Colors.blueAccent),
+                          child: Padding(
+                              padding: const EdgeInsets.only(
+                                  top: 0, left: 8, right: 8),
+                              child: SvgPicture.asset(
+                                "lib/asset/images/Group 2135.svg",
+                                width: 100,
+                                height: 30,
+                              )),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              (MaterialPageRoute(
+                                  builder: (context) => subject())));
+                        },
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top: 10, right: 0),
+                          child: TextButton(
+                            child: Container(
+                              width: 114,
+                              height: 56,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(12),
+                                  color: Colors.blueAccent),
+                              child: Padding(
+                                  padding: const EdgeInsets.only(
+                                      top: 0, left: 8, right: 8),
+                                  child: SvgPicture.asset(
+                                    "lib/asset/images/Group 2136.svg",
+                                    width: 100,
+                                    height: 30,
+                                  )),
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  (MaterialPageRoute(
+                                      builder: (context) => subject2())));
+                            },
+                          ),
+                        ),
+                        Row(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(top: 10, left: 0),
+                              child: TextButton(
+                                child: Container(
+                                  width: 114,
+                                  height: 56,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(12),
+                                      color: Colors.blueAccent),
+                                  child: Padding(
+                                      padding: const EdgeInsets.only(
+                                          top: 0, left: 8, right: 8),
+                                      child: SvgPicture.asset(
+                                        "lib/asset/images/Group 2137.svg",
+                                        width: 100,
+                                        height: 30,
+                                      )),
+                                ),
+                                onPressed: () {},
+                              ),
+                            ),
+                          ],
+                        )
+                      ],
+                    )
+                  ],
+                )
+              ],
+            ),
+            Stack(
+              children: [
+                Column(
+                  children: [
+                    Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top: 15),
+                          child: Container(
+                            height: 63,
+                            width: 350,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(12),
+                              color: Color.fromARGB(255, 86, 167, 244),
+                            ),
+                            child: Padding(
+                                padding: const EdgeInsets.only(
+                                    top: 0, left: 8, right: 32),
+                                child: SvgPicture.asset(
+                                  "lib/asset/images/Group 2150.svg",
+                                  width: 90,
+                                  height: 20,
+                                )),
+                          ),
+                        ),
+                        Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(top: 10),
+                              child: Container(
+                                height: 63,
+                                width: 350,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(12),
+                                  color: Color.fromARGB(255, 86, 167, 244),
+                                ),
+                                child: Padding(
+                                    padding: const EdgeInsets.only(
+                                        top: 0, left: 8, right: 80),
+                                    child: SvgPicture.asset(
+                                      "lib/asset/images/Group 2152.svg",
+                                      width: 100,
+                                      height: 30,
+                                    )),
+                              ),
+                            ),
+                            Column(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 10),
+                                  child: TextButton(
+                                    child: Container(
+                                      height: 63,
+                                      width: 350,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(12),
+                                        color:
+                                            Color.fromARGB(255, 86, 167, 244),
+                                      ),
+                                      child: Padding(
+                                          padding: const EdgeInsets.only(
+                                              top: 0, left: 0, right: 80),
+                                          child: SvgPicture.asset(
+                                            "lib/asset/images/Group 2144.svg",
+                                            width: 100,
+                                            height: 30,
+                                          )),
+                                    ),
+                                    onPressed: () {
+                                      launchUrl(_url);
+                                    },
+                                  ),
+                                ),
+                              ],
+                            )
+                          ],
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ],
+            )
+          ])
+        ]));
+  }
+}
+
+class subject2 extends StatelessWidget {
+  const subject2({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        backgroundColor: Colors.white,
+        appBar: AppBar(
+          backgroundColor: Color.fromARGB(132, 83, 63, 236),
+          toolbarHeight: 110,
+          title: Text(
+            "Select subject",
+            style: TextStyle(fontSize: 22),
+          ),
+        ),
+        body: Stack(
+          children: [
+            Column(
+              children: [
+                Stack(
+                  children: [
+                    Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top: 40, left: 100),
+                          child: TextButton(
+                            child: Padding(
+                              padding: const EdgeInsets.only(right: 68),
+                              child: Text("Java programming",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.black)),
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  (MaterialPageRoute(
+                                      builder: (context) => math())));
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 40, left: 25),
+                      child: SvgPicture.asset(
+                        "lib/asset/images/23.svg",
+                        width: 0,
+                        height: 53,
+                      ),
+                    )
+                  ],
+                ),
+                Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 35, left: 80),
+                      child: Container(
+                        child: TextButton(
+                          child: Text("Java Programming hindi ",
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.black,
+                              )),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                (MaterialPageRoute(
+                                    builder: (context) => chindi())));
+                          },
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8, top: 30),
+                      child: SvgPicture.asset(
+                        "lib/asset/images/23.svg",
+                        width: 50,
+                        height: 53,
+                      ),
+                    )
+                  ],
+                ),
+                Stack(
+                  children: [
+                    TextButton(
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 45, left: 70),
+                        child: Container(
+                          child: Text("Python programming",
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.black,
+                              )),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.push(context,
+                            (MaterialPageRoute(builder: (context) => cpp())));
+                      },
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 230, top: 40),
+                      child: SvgPicture.asset(
+                        "lib/asset/images/28.svg",
+                        width: 50,
+                        height: 53,
+                      ),
+                    )
+                  ],
+                ),
+                Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 40, left: 73),
+                      child: Container(
+                        child: TextButton(
+                          child: Text("Internet programming",
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.black,
+                              )),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                (MaterialPageRoute(
+                                    builder: (context) => dbms())));
+                          },
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 230, top: 35),
+                      child: SvgPicture.asset(
+                        "lib/asset/images/5.svg",
+                        width: 50,
+                        height: 53,
+                      ),
+                    )
+                  ],
+                ),
+                Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 40, left: 73),
+                      child: Container(
+                        child: TextButton(
+                          child: Text("Operating System",
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.black,
+                              )),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                (MaterialPageRoute(
+                                    builder: (context) => cf())));
+                          },
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 230, top: 35),
+                      child: SvgPicture.asset(
+                        "lib/asset/images/Microsoft.svg",
+                        width: 50,
+                        height: 53,
+                      ),
+                    )
+                  ],
+                ),
+                Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 35, left: 80),
+                      child: Container(
+                        child: TextButton(
+                          child: const Text("Coumputer Organistion",
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.black,
+                              )),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                (MaterialPageRoute(
+                                    builder: (context) => pf())));
+                          },
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 5, top: 35),
+                      child: SvgPicture.asset(
+                        "lib/asset/images/Group 1 (1).svg",
+                        width: 50,
+                        height: 53,
+                      ),
+                    )
+                  ],
+                ),
+                Stack(
+                  children: [
+                    TextButton(
+                      child: const Padding(
+                        padding: EdgeInsets.only(top: 40, left: 75),
+                        child: Text("Cloud Computing",
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.black,
+                            )),
+                      ),
+                      onPressed: () {
+                        Navigator.push(context,
+                            (MaterialPageRoute(builder: (context) => cn())));
+                      },
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 220, top: 40),
+                      child: SvgPicture.asset(
+                        "lib/asset/images/g710.svg",
+                        width: 40,
+                        height: 43,
+                      ),
+                    )
+                  ],
+                ),
+              ],
+            )
+          ],
+        ));
   }
 }

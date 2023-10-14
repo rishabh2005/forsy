@@ -41,6 +41,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  url_launcher: ^6.1.14
 
 dev_dependencies:
   flutter_test:
@@ -95,6 +96,26 @@ flutter:
      - lib/asset/images/Fundamentals-of-Computer-and-IT-UGCA-1902-1.pdf
      - lib/asset/images/COMPUTER NETWORKS NOTES.pdf
      - lib/asset/images/BCA-1st-Programming-IN-Caaa.pdf
+     - lib/asset/images/Group 2134.svg
+     - lib/Business Plan.svg
+     - lib/asset/images/Group 2135.svg
+     - lib/asset/images/Group 2136.svg
+     - lib/asset/images/Group 2137.svg
+     - lib/asset/images/Group 2141.svg
+     - lib/asset/images/Group 2143.svg
+     - lib/asset/images/Group 2144.svg
+     - lib/asset/images/Group 2145.svg
+     - lib/asset/images/Group 2146.svg
+     - lib/asset/images/Group 2148.svg
+     - lib/asset/images/Group 2149.svg
+     - lib/asset/images/Group 2150.svg
+     - lib/asset/images/Group 2152.svg
+     - lib/asset/images/23.svg
+     - lib/asset/images/28.svg
+     - lib/asset/images/5.svg
+     - lib/asset/images/g710.svg
+     - lib/asset/images/Microsoft.svg
+     - lib/asset/images/Group 1 (1).svg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
