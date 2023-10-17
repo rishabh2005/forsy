@@ -42,6 +42,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   url_launcher: ^6.1.14
+  google_mobile_ads: ^3.0.0
+  provider: ^6.0.5
 
 dev_dependencies:
   flutter_test:
@@ -116,6 +118,15 @@ flutter:
      - lib/asset/images/g710.svg
      - lib/asset/images/Microsoft.svg
      - lib/asset/images/Group 1 (1).svg
+     - lib/asset/images/Object Oriented Programming through JAVA.pdf
+     - lib/asset/images/Java note.pdf
+     - lib/asset/images/python.pdf
+     - lib/asset/images/Sams Teach Yourself HTML, CSS, and JavaScript All in One.pdf
+     - lib/asset/images/os.pdf
+     - lib/CLOUD COMPUTING DIGITAL NOTES (R18A0523).pdf
+     - lib/asset/images/R18A1201 COA.pdf
+     - lib/asset/images/syllbus.pdf
+     - lib/asset/images/zbook_bank-computer-fundamental-mcq-_1545650.pdf
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
