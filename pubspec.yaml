@@ -31,11 +31,19 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_svg: ^2.0.7
+  pdf: ^3.10.4
+  file_picker: ^5.5.0
+  path_provider: ^2.1.1
+  syncfusion_flutter_pdf: ^23.1.38
+  syncfusion_flutter_pdfviewer: ^23.1.38
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  url_launcher: ^6.1.14
+  google_mobile_ads: ^3.0.0
+  provider: ^6.0.5
 
 dev_dependencies:
   flutter_test:
@@ -74,6 +82,51 @@ flutter:
      - lib/asset/images/Group 44.svg
      - lib/asset/images/image 21.svg
      - lib/asset/images/Group 80.svg
+     - lib/asset/images/3.svg
+     - lib/asset/images/Windows 11.svg
+     - lib/asset/images/ClickUp.svg
+     - lib/asset/images/Frame 1.svg
+     - lib/asset/images/electron-original.svg
+     - lib/asset/images/c-original.svg
+     - lib/asset/images/Mathematics -1 (BCA-102).pdf
+     - lib/asset/images/CPlusPlusNotesForProfessionals.pdf
+     - lib/asset/images/mysql-original-wordmark.svg
+     - lib/asset/images/c++-hindi.pdf
+     - lib/asset/images/1592408067.pdf
+     - lib/asset/images/4 Book.svg
+     - lib/asset/images/Group 8.svg
+     - lib/asset/images/Fundamentals-of-Computer-and-IT-UGCA-1902-1.pdf
+     - lib/asset/images/COMPUTER NETWORKS NOTES.pdf
+     - lib/asset/images/BCA-1st-Programming-IN-Caaa.pdf
+     - lib/asset/images/Group 2134.svg
+     - lib/Business Plan.svg
+     - lib/asset/images/Group 2135.svg
+     - lib/asset/images/Group 2136.svg
+     - lib/asset/images/Group 2137.svg
+     - lib/asset/images/Group 2141.svg
+     - lib/asset/images/Group 2143.svg
+     - lib/asset/images/Group 2144.svg
+     - lib/asset/images/Group 2145.svg
+     - lib/asset/images/Group 2146.svg
+     - lib/asset/images/Group 2148.svg
+     - lib/asset/images/Group 2149.svg
+     - lib/asset/images/Group 2150.svg
+     - lib/asset/images/Group 2152.svg
+     - lib/asset/images/23.svg
+     - lib/asset/images/28.svg
+     - lib/asset/images/5.svg
+     - lib/asset/images/g710.svg
+     - lib/asset/images/Microsoft.svg
+     - lib/asset/images/Group 1 (1).svg
+     - lib/asset/images/Object Oriented Programming through JAVA.pdf
+     - lib/asset/images/Java note.pdf
+     - lib/asset/images/python.pdf
+     - lib/asset/images/Sams Teach Yourself HTML, CSS, and JavaScript All in One.pdf
+     - lib/asset/images/os.pdf
+     - lib/CLOUD COMPUTING DIGITAL NOTES (R18A0523).pdf
+     - lib/asset/images/R18A1201 COA.pdf
+     - lib/asset/images/syllbus.pdf
+     - lib/asset/images/zbook_bank-computer-fundamental-mcq-_1545650.pdf
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
